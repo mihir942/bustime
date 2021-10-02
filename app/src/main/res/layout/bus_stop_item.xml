@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/busStopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Blk 322"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/busStopRoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/busStopTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+
+        android:text="Jln Eunos"
+        android:textAlignment="textStart"
+        android:textColor="#7C7C7C"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/busStopCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/busStopRoad"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginStart="20dp"
+
+        android:text="#72011"
+        android:textAlignment="textStart"
+        android:textColor="#7C7C7C"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="27dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
