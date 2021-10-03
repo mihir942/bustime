@@ -13,6 +13,7 @@ import androidx.room.Room;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.pmapps.bustime.BusList.BusList;
 import com.pmapps.bustime.BusStopList.BusStopClickInterface;
@@ -50,6 +51,8 @@ public class FavFragment extends Fragment implements BusStopClickInterface {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_fav, container, false);
+
+        Toast.makeText(requireContext(), "Hello", Toast.LENGTH_SHORT).show();
 
         // Database
         favBusStopDatabase = Room.databaseBuilder(requireActivity(), FavBusStopDatabase.class, "favlistdb").allowMainThreadQueries().build();
