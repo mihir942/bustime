@@ -21,9 +21,12 @@ public class Logic {
 
         Drawable img = null;
         if (decker == Decker.SINGLE) {
-            img = ResourcesCompat.getDrawable(context.getResources(), R.drawable.img_sd_bus, null);
+            img = null;
+            img = ResourcesCompat.getDrawable(context.getResources(), R.drawable.sd_bus_icon, null);
         } else if (decker == Decker.DOUBLE) {
-            img = ResourcesCompat.getDrawable(context.getResources(), R.drawable.img_dd_bus, null);
+            img = ResourcesCompat.getDrawable(context.getResources(), R.drawable.dd_bus_icon, null);
+        } else {
+            img = null;
         }
         return img;
     }
